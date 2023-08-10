@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gmod - LoadingScreen</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/slide.css">
+        <link rel="stylesheet" type="text/css" href="css/loading.css">
+    </head>
+    <body>
+        <!-- LOGO -->
+        <div class="up">
+            <img id="logo" src="img/logo.png" style="height:300px;width:300px;">
+        </div>
+        <!-- Background -->
+        <div class="slider">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+        <!-- Loading BAR-->
+        <section class="middle">
+            <div class="progress-bar">
+                <div class="progress" style="width: 10px;" id="progressbar" role="progressbar"></div>
+            </div>
+            <div class="progress-text" id="subtext1"></div>
+        </section>
+        <!-- MUSIC -->
+        <audio autoplay loop id="music">
+            <source src="./panda.ogg" type="audio/ogg">
+        </audio>
+        <!-- SCRIPTS -->
+        <script src="js/steam.js"></script>
+        <script src="js/music.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+            integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>
+<!-- Takeus 2021-2023 -->

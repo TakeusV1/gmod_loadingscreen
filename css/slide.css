@@ -1,0 +1,58 @@
+.slider {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slider 30s infinite;
+  -webkit-filter: brightness(75%);
+  -webkit-filter: blur(8px);
+  filter:brightness(75%);
+  filter: blur(8px);
+}
+.slider .slide:nth-child(1) {
+  background-image: url('../img/map01.jpg');
+  animation-delay: 0s;
+}
+.slider .slide:nth-child(2) {
+  background-image: url('../img/map02.jpg');
+  animation-delay: -6s;
+}
+.slider .slide:nth-child(3) {
+  background-image: url('../img/map03.jpg');
+  animation-delay: -12s;
+}
+.slider .slide:nth-child(4) {
+  background-image: url('../img/map04.jpg');
+  animation-delay: -18s;
+}
+.slider .slide:nth-child(5) {
+  background-image: url('../img/map05.jpg');
+  animation-delay: -24s;
+}
+
+@keyframes slider {
+  0%, 17%, 100% {
+    opacity: 1;
+    animation-timing-function: ease;
+    z-index: 0;
+  }
+  20% {
+    opacity: 0;
+    animation-timing-function: step-end;
+    z-index: 0;
+  }
+  97% {
+    opacity: 1;
+    animation-timing-function: step-end;
+    z-index: -1;
+  }
+}
